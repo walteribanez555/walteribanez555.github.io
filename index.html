@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Walter | Website </title>
+
+    <! –– base SEO ––> 
+    <meta name="description" content="Personal portfolio Walter Ibañez | Mobile developer ">
+    <! –– base PWA ––> 
+    <meta name="theme-color" content="#0069D1">
+    <! –– Favicon ––> 
+    <link rel="shortcut icon" type="image/png"  href="#">
+    <! –– main CSS ––> 
+    <link rel="stylesheet" href="css/styles.css">
+    <! –– carousel Glide JS ––> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.min.css" integrity="sha512-YQlbvfX5C6Ym6fTUSZ9GZpyB3F92hmQAZTO5YjciedwAaGRI9ccNs4iw2QTCJiSPheUQZomZKHQtuwbHkA9lgw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+
+</head>
+<body>
+
+
+    <header class="section header">
+        <div class="container">
+
+            <a href="index.html" class="logo">Walter</a>
+            <div class="theme-button">
+                <svg class="dark-mode" xmlns="http://www.w3.org/2000/svg" fill="none" height="24" width="24">
+                    <title> dark mode</title>
+                    <path d="M12 21q-3.75 0-6.375-2.625T3 12q0-3.75 2.625-6.375T12 3q.35 0 .688.025.337.025.662.075-1.025.725-1.637 1.887Q11.1 6.15 11.1 7.5q0 2.25 1.575 3.825Q14.25 12.9 16.5 12.9q1.375 0 2.525-.613 1.15-.612 1.875-1.637.05.325.075.662Q21 11.65 21 12q0 3.75-2.625 6.375T12 21Zm0-2q2.2 0 3.95-1.212 1.75-1.213 2.55-3.163-.5.125-1 .2-.5.075-1 .075-3.075 0-5.238-2.162Q9.1 10.575 9.1 7.5q0-.5.075-1t.2-1q-1.95.8-3.162 2.55Q5 9.8 5 12q0 2.9 2.05 4.95Q9.1 19 12 19Zm-.25-6.75Z" fill="#000"/>
+                </svg>
+                <svg class="light-mode" xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="none">
+                    <title>light mode</title>
+                    <path d="M12 15q1.25 0 2.125-.875T15 12q0-1.25-.875-2.125T12 9q-1.25 0-2.125.875T9 12q0 1.25.875 2.125T12 15Zm0 2q-2.075 0-3.537-1.463Q7 14.075 7 12t1.463-3.538Q9.925 7 12 7t3.538 1.462Q17 9.925 17 12q0 2.075-1.462 3.537Q14.075 17 12 17ZM2 13q-.425 0-.712-.288Q1 12.425 1 12t.288-.713Q1.575 11 2 11h2q.425 0 .713.287Q5 11.575 5 12t-.287.712Q4.425 13 4 13Zm18 0q-.425 0-.712-.288Q19 12.425 19 12t.288-.713Q19.575 11 20 11h2q.425 0 .712.287.288.288.288.713t-.288.712Q22.425 13 22 13Zm-8-8q-.425 0-.712-.288Q11 4.425 11 4V2q0-.425.288-.713Q11.575 1 12 1t.713.287Q13 1.575 13 2v2q0 .425-.287.712Q12.425 5 12 5Zm0 18q-.425 0-.712-.288Q11 22.425 11 22v-2q0-.425.288-.712Q11.575 19 12 19t.713.288Q13 19.575 13 20v2q0 .425-.287.712Q12.425 23 12 23ZM5.65 7.05 4.575 6q-.3-.275-.288-.7.013-.425.288-.725.3-.3.725-.3t.7.3L7.05 5.65q.275.3.275.7 0 .4-.275.7-.275.3-.687.287-.413-.012-.713-.287ZM18 19.425l-1.05-1.075q-.275-.3-.275-.712 0-.413.275-.688.275-.3.688-.287.412.012.712.287L19.425 18q.3.275.288.7-.013.425-.288.725-.3.3-.725.3t-.7-.3ZM16.95 7.05q-.3-.275-.287-.688.012-.412.287-.712L18 4.575q.275-.3.7-.288.425.013.725.288.3.3.3.725t-.3.7L18.35 7.05q-.3.275-.7.275-.4 0-.7-.275ZM4.575 19.425q-.3-.3-.3-.725t.3-.7l1.075-1.05q.3-.275.713-.275.412 0 .687.275.3.275.288.688-.013.412-.288.712L6 19.425q-.275.3-.7.287-.425-.012-.725-.287ZM12 12Z" fill="#FFF"/></svg>
+
+            </div>
+            <button class="open-menu-button">
+                <svg class="open-menu" xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="M3 18v-2h18v2Zm0-5v-2h18v2Zm0-5V6h18v2Z"/></svg>
+            </button>
+            <nav class="main-nav ">
+                <ul class="list">
+                    <li class="item">
+                        <a href="#home" class="link -active">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="none" >
+                                <title>Home</title>
+                                <path d="M4 21V9l8-6 8 6v12h-6v-7h-4v7Zm2-2h2v-7h8v7h2v-9l-6-4.5L6 10Zm6-6.75Z" fill="#6D6A7C" /></svg>
+                            Home
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#about" class="link">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+                                <title>About</title>
+                                <path d="M5.85 17.1q1.275-.975 2.85-1.538Q10.275 15 12 15q1.725 0 3.3.562 1.575.563 2.85 1.538.875-1.025 1.363-2.325Q20 13.475 20 12q0-3.325-2.337-5.663Q15.325 4 12 4T6.338 6.337Q4 8.675 4 12q0 1.475.488 2.775.487 1.3 1.362 2.325ZM12 13q-1.475 0-2.488-1.012Q8.5 10.975 8.5 9.5t1.012-2.488Q10.525 6 12 6t2.488 1.012Q15.5 8.025 15.5 9.5t-1.012 2.488Q13.475 13 12 13Zm0 9q-2.075 0-3.9-.788-1.825-.787-3.175-2.137-1.35-1.35-2.137-3.175Q2 14.075 2 12t.788-3.9q.787-1.825 2.137-3.175 1.35-1.35 3.175-2.138Q9.925 2 12 2t3.9.787q1.825.788 3.175 2.138 1.35 1.35 2.137 3.175Q22 9.925 22 12t-.788 3.9q-.787 1.825-2.137 3.175-1.35 1.35-3.175 2.137Q14.075 22 12 22Zm0-2q1.325 0 2.5-.387 1.175-.388 2.15-1.113-.975-.725-2.15-1.113Q13.325 17 12 17t-2.5.387q-1.175.388-2.15 1.113.975.725 2.15 1.113Q10.675 20 12 20Zm0-9q.65 0 1.075-.425.425-.425.425-1.075 0-.65-.425-1.075Q12.65 8 12 8q-.65 0-1.075.425Q10.5 8.85 10.5 9.5q0 .65.425 1.075Q11.35 11 12 11Zm0-1.5Zm0 9Z" fill="#6D6A7C"/></svg>
+                            
+                            About
+                            
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#skills" class="link">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+                                <title>Skills</title>
+                                <path d="m14.05 18.375 4.975-4.975L17.6 12l-3.55 3.55-1.4-1.425-1.425 1.425ZM7 15h3v-2H7Zm0-3h7v-2H7Zm0-3h7V7H7Zm5 13q-2.075 0-3.9-.788-1.825-.787-3.175-2.137-1.35-1.35-2.137-3.175Q2 14.075 2 12t.788-3.9q.787-1.825 2.137-3.175 1.35-1.35 3.175-2.138Q9.925 2 12 2t3.9.787q1.825.788 3.175 2.138 1.35 1.35 2.137 3.175Q22 9.925 22 12t-.788 3.9q-.787 1.825-2.137 3.175-1.35 1.35-3.175 2.137Q14.075 22 12 22Zm0-2q3.35 0 5.675-2.325Q20 15.35 20 12q0-3.35-2.325-5.675Q15.35 4 12 4 8.65 4 6.325 6.325 4 8.65 4 12q0 3.35 2.325 5.675Q8.65 20 12 20Zm0-8Z" fill="#6D6A7C"/></svg>
+                            
+                            Skills
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#services" class="link">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+                                <title>Services</title>
+                                <path d="M3 21v-4.25l4.5-4.5-3.875-3.9q-.3-.3-.437-.675-.138-.375-.138-.75t.138-.737q.137-.363.437-.663l1.9-1.9q.3-.3.675-.438.375-.137.75-.137t.738.137q.362.138.662.438l3.9 3.9 4.475-4.5q.15-.15.325-.225.175-.075.375-.075t.387.075q.188.075.338.225l2.825 2.825q.15.15.225.325.075.175.075.375t-.075.388q-.075.187-.225.337L16.5 11.75l3.875 3.9q.3.3.437.675.138.375.138.75t-.138.737q-.137.363-.437.663l-1.9 1.9q-.3.3-.663.437-.362.138-.737.138t-.75-.138q-.375-.137-.675-.437l-3.9-3.9L7.25 21Zm5.925-10.175 1.9-1.9-1.2-1.2-1.2 1.175-1.4-1.4L8.2 6.3 6.925 5.05 5.05 6.95Zm8.125 8.125 1.9-1.9-1.275-1.25-1.175 1.175-1.425-1.4 1.2-1.2-1.225-1.2-1.9 1.9ZM5 19h1.4l9.625-9.6L14.6 7.975 5 17.6ZM17.425 7.975 18.85 6.55l-1.425-1.4-1.4 1.4Z" fill="#6D6A7C"/></svg>
+                            
+                            
+                            Services
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#portfolio" class="link">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+                                <title>Portfolio</title>
+                                <path d="m12.6 16.7 2.3-1.75 2.3 1.75-.85-2.85 2.3-1.85H15.8l-.9-2.8L14 12h-2.85l2.3 1.85ZM4 20q-.825 0-1.412-.587Q2 18.825 2 18V6q0-.825.588-1.412Q3.175 4 4 4h6l2 2h8q.825 0 1.413.588Q22 7.175 22 8v10q0 .825-.587 1.413Q20.825 20 20 20ZM4 6v12h16V8h-8.825l-2-2H4Zm0 0v12Z" fill="#6D6A7C"/></svg>
+
+                            Portfolio
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#contact" class="link">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+                                <title>Contact me</title>
+                                <path d="M14 11h7V6h-7Zm3.5-1.25L15 8V7l2.5 1.75L20 7v1ZM2 21q-.825 0-1.412-.587Q0 19.825 0 19V5q0-.825.588-1.413Q1.175 3 2 3h20q.825 0 1.413.587Q24 4.175 24 5v14q0 .825-.587 1.413Q22.825 21 22 21Zm13.9-2H22V5H2v14h.1q1.05-1.875 2.9-2.938Q6.85 15 9 15t4 1.062q1.85 1.063 2.9 2.938ZM9 14q1.25 0 2.125-.875T12 11q0-1.25-.875-2.125T9 8q-1.25 0-2.125.875T6 11q0 1.25.875 2.125T9 14Zm-4.45 5h8.9q-.85-.95-2.012-1.475Q10.275 17 9 17q-1.275 0-2.425.525T4.55 19ZM9 12q-.425 0-.712-.288Q8 11.425 8 11t.288-.713Q8.575 10 9 10t.713.287Q10 10.575 10 11t-.287.712Q9.425 12 9 12Zm3 0Z" fill="#6D6A7C"/></svg>
+                            
+                            Contact me
+                        </a>
+                    </li>
+                </ul>
+
+                <button class="close-menu-button">
+                    <img src="./assets/img/close.svg" alt="Close menu button" width="24" height="24">
+
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <section  id="home"  class="section home">
+        <div class="container">
+
+            <div class="home-social">
+                <ul class="social">
+                    <li class="item">
+                        <a href="https://linkedin.com/" 
+                        class="link" 
+                        rel="noopener"
+                        target="_blank">
+                        <svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="24px" height="24px">
+                            <title>Linkedin</title>
+                            <path d="M 8 3.0117188 C 6.3126093 3.0117188 4.8354789 3.4916328 3.7539062 4.3652344 C 2.6723337 5.238836 2.0117188 6.533218 2.0117188 7.9472656 C 2.0117188 10.690836 4.4687078 12.814467 7.7167969 12.941406 A 0.98809878 0.98809878 0 0 0 8 12.988281 C 9.753566 12.988281 11.246191 12.474267 12.3125 11.564453 C 13.378809 10.654639 13.988281 9.3429353 13.988281 7.9472656 A 0.98809878 0.98809878 0 0 0 13.986328 7.8925781 C 13.832307 5.1316834 11.374781 3.0117187 8 3.0117188 z M 8 4.9882812 C 10.60907 4.9882812 11.895883 6.2693448 12.005859 7.9726562 C 11.998759 8.8049335 11.676559 9.5118991 11.03125 10.0625 C 10.378809 10.619186 9.371434 11.011719 8 11.011719 C 5.3980542 11.011719 3.9882813 9.5991704 3.9882812 7.9472656 C 3.9882812 7.1213132 4.3276663 6.4422421 4.9960938 5.9023438 C 5.6645211 5.3624454 6.6873907 4.9882813 8 4.9882812 z M 3 15 A 1.0001 1.0001 0 0 0 2 16 L 2 45 A 1.0001 1.0001 0 0 0 3 46 L 13 46 A 1.0001 1.0001 0 0 0 14 45 L 14 35.664062 L 14 16 A 1.0001 1.0001 0 0 0 13 15 L 3 15 z M 18 15 A 1.0001 1.0001 0 0 0 17 16 L 17 45 A 1.0001 1.0001 0 0 0 18 46 L 28 46 A 1.0001 1.0001 0 0 0 29 45 L 29 29 L 29 28.75 L 29 28.5 C 29 26.555577 30.555577 25 32.5 25 C 34.444423 25 36 26.555577 36 28.5 L 36 45 A 1.0001 1.0001 0 0 0 37 46 L 47 46 A 1.0001 1.0001 0 0 0 48 45 L 48 28 C 48 23.873476 46.787888 20.604454 44.744141 18.375 C 42.700394 16.145546 39.849212 15 36.787109 15 C 32.882872 15 30.521631 16.426076 29 17.601562 L 29 16 A 1.0001 1.0001 0 0 0 28 15 L 18 15 z M 4 17 L 12 17 L 12 35.664062 L 12 44 L 4 44 L 4 17 z M 19 17 L 27 17 L 27 19.638672 A 1.0001 1.0001 0 0 0 28.744141 20.306641 C 28.744141 20.306641 31.709841 17 36.787109 17 C 39.360007 17 41.615528 17.922268 43.269531 19.726562 C 44.923534 21.530858 46 24.261524 46 28 L 46 44 L 38 44 L 38 28.5 A 1.0001 1.0001 0 0 0 37.916016 28.089844 C 37.694061 25.26411 35.38033 23 32.5 23 C 29.474423 23 27 25.474423 27 28.5 L 27 28.75 L 27 29 L 27 44 L 19 44 L 19 17 z"/></svg>
+                        
+                            
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="https://github.com/" 
+                        class="link"
+                        rel="noopener"
+                        target="_blank">
+                        <svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="24px" height="24px">
+                            <title>Github</title>
+                            <path d="M17.791,46.836C18.502,46.53,19,45.823,19,45v-5.4c0-0.197,0.016-0.402,0.041-0.61C19.027,38.994,19.014,38.997,19,39 c0,0-3,0-3.6,0c-1.5,0-2.8-0.6-3.4-1.8c-0.7-1.3-1-3.5-2.8-4.7C8.9,32.3,9.1,32,9.7,32c0.6,0.1,1.9,0.9,2.7,2c0.9,1.1,1.8,2,3.4,2 c2.487,0,3.82-0.125,4.622-0.555C21.356,34.056,22.649,33,24,33v-0.025c-5.668-0.182-9.289-2.066-10.975-4.975 c-3.665,0.042-6.856,0.405-8.677,0.707c-0.058-0.327-0.108-0.656-0.151-0.987c1.797-0.296,4.843-0.647,8.345-0.714 c-0.112-0.276-0.209-0.559-0.291-0.849c-3.511-0.178-6.541-0.039-8.187,0.097c-0.02-0.332-0.047-0.663-0.051-0.999 c1.649-0.135,4.597-0.27,8.018-0.111c-0.079-0.5-0.13-1.011-0.13-1.543c0-1.7,0.6-3.5,1.7-5c-0.5-1.7-1.2-5.3,0.2-6.6 c2.7,0,4.6,1.3,5.5,2.1C21,13.4,22.9,13,25,13s4,0.4,5.6,1.1c0.9-0.8,2.8-2.1,5.5-2.1c1.5,1.4,0.7,5,0.2,6.6c1.1,1.5,1.7,3.2,1.6,5 c0,0.484-0.045,0.951-0.11,1.409c3.499-0.172,6.527-0.034,8.204,0.102c-0.002,0.337-0.033,0.666-0.051,0.999 c-1.671-0.138-4.775-0.28-8.359-0.089c-0.089,0.336-0.197,0.663-0.325,0.98c3.546,0.046,6.665,0.389,8.548,0.689 c-0.043,0.332-0.093,0.661-0.151,0.987c-1.912-0.306-5.171-0.664-8.879-0.682C35.112,30.873,31.557,32.75,26,32.969V33 c2.6,0,5,3.9,5,6.6V45c0,0.823,0.498,1.53,1.209,1.836C41.37,43.804,48,35.164,48,25C48,12.318,37.683,2,25,2S2,12.318,2,25 C2,35.164,8.63,43.804,17.791,46.836z"/></svg>
+
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="https://www.instagram.com/walter_ibanezs/?hl=es-la" 
+                        class="link"
+                        rel="noopener"
+                        target="_blank">
+                        <svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="24px" height="24px">
+                            <title>Instagram</title>
+                            <path d="M 13.5 6 C 9.3754991 6 6 9.3754991 6 13.5 L 6 34.5 C 6 38.624501 9.3754991 42 13.5 42 L 34.5 42 C 38.624501 42 42 38.624501 42 34.5 L 42 13.5 C 42 9.3754991 38.624501 6 34.5 6 L 13.5 6 z M 13.5 9 L 34.5 9 C 37.003499 9 39 10.996501 39 13.5 L 39 18 L 30.599609 18 C 28.950631 16.186543 26.631199 15 24 15 C 21.368801 15 19.049369 16.186543 17.400391 18 L 9 18 L 9 13.5 C 9 10.996501 10.996501 9 13.5 9 z M 31.5 12 A 1.50015 1.50015 0 1 0 31.5 15 L 34.5 15 A 1.50015 1.50015 0 1 0 34.5 12 L 31.5 12 z M 24 18 C 27.331479 18 30 20.668523 30 24 C 30 27.331477 27.331479 30 24 30 C 20.668521 30 18 27.331477 18 24 C 18 20.668523 20.668521 18 24 18 z M 9 21 L 15.607422 21 C 15.265966 21.948081 15 22.937567 15 24 C 15 28.952794 19.047202 33 24 33 C 28.952798 33 33 28.952794 33 24 C 33 22.937567 32.734034 21.948081 32.392578 21 L 39 21 L 39 34.5 C 39 37.003499 37.003499 39 34.5 39 L 13.5 39 C 10.996501 39 9 37.003499 9 34.5 L 9 21 z"/></svg>
+
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+
+            <div class="home-perfil">
+                <div class="perfil">
+                    <svg class="mask" width="200" height="186" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                            130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                            97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                            0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                            165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                            129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                            -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                            <image class="image" xlink:href="assets/img/perfil2.jpg"/>
+                        </g>
+                    </svg>
+                </div>
+
+            </div>
+
+            <div class="home-content">
+                <h1 class="home-title">Hi, I'm Walter Ibañez</h1>
+                <span class="subtitle" >Mobile-Web Developer</span>
+                <p class="text">Start level experiencie in web-mobil desing and 
+                    development knowledge, producing quality work.
+                </p>
+                <a href="#contact" class="calltoaction">
+                    Contact Me
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="none">
+                        <title>Contact me</title>
+                        <path d="M3 20V4l19 8Zm2-3 11.85-5L5 7v3.5l6 1.5-6 1.5Zm0 0V7v6.5Z" /></svg>
+                    
+                </a>
+
+            </div>
+            <a href="#about" class="scroll-down">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+                    <title>Scroll down</title>
+                    <path d="M12 22q-2.9 0-4.95-2.05Q5 17.9 5 15V9q0-2.9 2.05-4.95Q9.1 2 12 2q2.9 0 4.95 2.05Q19 6.1 19 9v6q0 2.9-2.05 4.95Q14.9 22 12 22Zm1-13h4q0-1.8-1.137-3.175Q14.725 4.45 13 4.1ZM7 9h4V4.1q-1.725.35-2.863 1.725Q7 7.2 7 9Zm5 11q2.075 0 3.538-1.462Q17 17.075 17 15v-4H7v4q0 2.075 1.463 3.538Q9.925 20 12 20Zm0-9Zm1-2Zm-2 0Zm1 2Z"fill="#6E57E0" /></svg>
+                    Scroll down
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+                        <path d="m12 20-8-8 1.4-1.425 5.6 5.6V4h2v12.175l5.6-5.6L20 12Z"fill="#6E57E0"/></svg>
+            </a>
+        </div>
+
+    </section>
+
+    <section id="about" class="section about">
+
+        <div class="section-title">
+            <h2 class="title">About Me</h2>
+            <span class="subtitle"> My Introduction</span>
+
+        </div>
+
+        <div class="container">
+            <div class="about-photo">
+                <picture>
+                    <source type="image/webp" srcset="./assets/img/perfil4.webp"> 
+                    <source type="image/jpg" srcset="./assets/img/perfil4.jpg">
+                    <img src="./assets/img/perfil4.jpg"
+                         alt="photo Walter"
+                         width="197" height="155">
+                </picture>
+            </div>
+
+            <div class="about-content">
+
+                <p class="description">
+                    Android and Web developer, 
+                    on the way to gain knowledge through working on projects that encourage me to improve every day.
+                </p>
+
+                <ul class="about-numbers">
+                    <li class="item">
+                        <p class="value">08+</p>
+                        <p class="text">Years experience</p>
+                    </li>
+                    <li class="item">
+                        <p class="value">20+</p>
+                        <p class="text">Completed projects</p>
+                    </li>
+                    <li class="item">
+                        <p class="value">05+</p>
+                        <p class="text">Companies worked</p>
+                    </li>
+                </ul>
+                <a href="./assets/pdf/Curriculum_EN_WalterIbanez.pdf" class="calltoaction -download"
+                rel="noopener"
+                target="_blank"
+
+                >
+                Download CV
+
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+                    <title>Download CV</title>
+                    <path d="M6 20q-.825 0-1.412-.587Q4 18.825 4 18v-3h2v3h12v-3h2v3q0 .825-.587 1.413Q18.825 20 18 20Zm6-4-5-5 1.4-1.45 2.6 2.6V4h2v8.15l2.6-2.6L17 11Z"/></svg>
+            </a>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="skills" class="section skills">
+        <div class="section-title">
+            <h2 class="title">Skills</h2>
+            <span class="subtitle">My Technical level</span>
+        </div>
+        <div class="container">
+
+            <div class="skill-accordion">
+                <button class="skill-button ">
+                    
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="M7 23q-.825 0-1.412-.587Q5 21.825 5 21V3q0-.825.588-1.413Q6.175 1 7 1h10q.825 0 1.413.587Q19 2.175 19 3v18q0 .825-.587 1.413Q17.825 23 17 23Zm0-3v1h10v-1Zm0-2h10V6H7ZM7 4h10V3H7Zm0 0V3v1Zm0 16v1Z" fill="#0069D1"/></svg>
+
+
+                    <div class="label">
+                        <h3 class="title">Android Developer</h3>
+                        <span class="subtitle">1 year experience</span>
+                    </div>
+                    <svg class="chevron" xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="m12 15.375-6-6 1.4-1.4 4.6 4.6 4.6-4.6 1.4 1.4Z"  fill="#0069D1" /></svg>
+                </button>
+                <div class="skill-content">
+                    <ul class="skill-list">
+                        <li class="skill-item">
+                            <div class="skill-title">
+                                <span class="name">Java</span>
+                                <span class="value">60%</span>
+                            </div>
+                            <div class="skill-bar -java"></div>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-title">
+                                <span class="name">Kotlin</span>
+                                <span class="value">40%</span>
+                            </div>
+                            <div class="skill-bar -kotlin"></div>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-title">
+                                <span class="name">Android Studio</span>
+                                <span class="value">70%</span>
+                            </div>
+                            <div class="skill-bar -androidstudio"></div>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="skill-accordion">
+                <button class="skill-button">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="M12 22q-2.075 0-3.9-.788-1.825-.787-3.175-2.137-1.35-1.35-2.137-3.175Q2 14.075 2 12t.788-3.9q.787-1.825 2.137-3.175 1.35-1.35 3.175-2.138Q9.925 2 12 2t3.9.787q1.825.788 3.175 2.138 1.35 1.35 2.137 3.175Q22 9.925 22 12t-.788 3.9q-.787 1.825-2.137 3.175-1.35 1.35-3.175 2.137Q14.075 22 12 22Zm-1-2.05V18q-.825 0-1.412-.587Q9 16.825 9 16v-1l-4.8-4.8q-.075.45-.138.9Q4 11.55 4 12q0 3.025 1.988 5.3Q7.975 19.575 11 19.95Zm6.9-2.55q.5-.55.9-1.188.4-.637.663-1.325.262-.687.4-1.412Q20 12.75 20 12q0-2.45-1.362-4.475Q17.275 5.5 15 4.6V5q0 .825-.587 1.412Q13.825 7 13 7h-2v2q0 .425-.287.712Q10.425 10 10 10H8v2h6q.425 0 .713.287.287.288.287.713v3h1q.65 0 1.175.387.525.388.725 1.013Z" fill="#0069D1"/></svg>
+
+                    <div class="label">
+                        <h3 class="title">Frontend Developer</h3>
+                        <span class="subtitle">1 year experience</span>
+                    </div>
+                    <svg class="chevron" xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="m12 15.375-6-6 1.4-1.4 4.6 4.6 4.6-4.6 1.4 1.4Z"  fill="#0069D1"/></svg>
+
+
+                </button>
+                <div class="skill-content">
+                    <ul class="skill-list">
+                        <li class="skill-item">
+                            <div class="skill-title">
+                                <span class="name">HTML/CSS</span>
+                                <span class="value">60%</span>
+                            </div>
+                            <div class="skill-bar -htmlcss"></div>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-title">
+                                <span class="name">Javascript</span>
+                                <span class="value">30%</span>
+                            </div>
+                            <div class="skill-bar -javascript"></div>
+                        </li>
+                        <
+                    </ul>
+
+
+                </div>
+            </div>
+            <div class="skill-accordion">
+                <button class="skill-button">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="M3 20v-4h18v4Zm2-1h2v-2H5ZM3 8V4h18v4Zm2-1h2V5H5Zm-2 7v-4h18v4Zm2-1h2v-2H5Z" fill="#0069D1"/></svg>
+
+                    <div class="label">
+                        <h3 class="title">Backend Developer</h3>
+                        <span class="subtitle">1 year experience</span>
+                    </div>
+                    <svg class="chevron" xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="m12 15.375-6-6 1.4-1.4 4.6 4.6 4.6-4.6 1.4 1.4Z"  fill="#0069D1"/></svg>
+
+
+
+                </button>
+                <div class="skill-content">
+                    <ul class="skill-list">
+                        <li class="skill-item">
+                            <div class="skill-title">
+                                <span class="name">PHP</span>
+                                <span class="value">40%</span>
+                            </div>
+                            <div class="skill-bar -php"></div>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-title">
+                                <span class="name">LARAVEL</span>
+                                <span class="value">55%</span>
+                            </div>
+                            <div class="skill-bar -laravel"></div>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-title">
+                                <span class="name">MySql</span>
+                                <span class="value">40%</span>
+                            </div>
+                            <div class="skill-bar -php"></div>
+                        </li>
+                        
+                    </ul>
+                    
+
+                </div>
+            </div>
+            
+
+        </div>
+
+    </section>
+
+    <section class="section qualification">
+        
+        <div class="container">
+            <div class="section-title">
+                <h2 class="title">Qualification</h2>
+                <span class="subtitle">My personal journey</span>
+            </div>
+
+            <div class="qualification-tabs">
+                <a href="#education" class="qualification-button -active">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+                        <title>Education</title>
+                        <path d="m12 21-7-3.8v-6L1 9l11-6 11 6v8h-2v-6.9l-2 1.1v6Zm0-8.3L18.85 9 12 5.3 5.15 9Zm0 6.025 5-2.7V12.25L12 15l-5-2.75v3.775Zm0-6.025Zm0 2.25Zm0 0Z" fill="#0069D1"/></svg>
+
+                    Education
+                </a>
+                <a href="#work" class="qualification-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+                        <title>Work</title>
+                        <path d="M1.05 21v-2.8q0-.825.425-1.55.425-.725 1.175-1.1 1.275-.65 2.875-1.1Q7.125 14 9.05 14q1.925 0 3.525.45 1.6.45 2.875 1.1.75.375 1.175 1.1.425.725.425 1.55V21Zm2-2h12v-.8q0-.275-.137-.5-.138-.225-.363-.35-.9-.45-2.312-.9Q10.825 16 9.05 16q-1.775 0-3.187.45-1.413.45-2.313.9-.225.125-.362.35-.138.225-.138.5Zm6-6q-1.65 0-2.825-1.175Q5.05 10.65 5.05 9H4.8q-.225 0-.362-.137Q4.3 8.725 4.3 8.5q0-.225.138-.363Q4.575 8 4.8 8h.25q0-1.125.55-2.025.55-.9 1.45-1.425v.95q0 .225.138.362Q7.325 6 7.55 6q.225 0 .363-.138.137-.137.137-.362V4.15q.225-.075.475-.113Q8.775 4 9.05 4t.525.037q.25.038.475.113V5.5q0 .225.138.362.137.138.362.138.225 0 .363-.138.137-.137.137-.362v-.95q.9.525 1.45 1.425.55.9.55 2.025h.25q.225 0 .363.137.137.138.137.363 0 .225-.137.363Q13.525 9 13.3 9h-.25q0 1.65-1.175 2.825Q10.7 13 9.05 13Zm0-2q.825 0 1.413-.588.587-.587.587-1.412h-4q0 .825.588 1.412Q8.225 11 9.05 11Zm7.5 4-.15-.75q-.15-.05-.287-.113-.138-.062-.263-.187l-.7.25-.5-.9.55-.5v-.6l-.55-.5.5-.9.7.25q.1-.1.25-.175.15-.075.3-.125l.15-.75h1l.15.75q.15.05.3.125t.25.175l.7-.25.5.9-.55.5v.6l.55.5-.5.9-.7-.25q-.125.125-.262.187-.138.063-.288.113l-.15.75Zm.5-1.75q.3 0 .525-.225.225-.225.225-.525 0-.3-.225-.525-.225-.225-.525-.225-.3 0-.525.225-.225.225-.225.525 0 .3.225.525.225.225.525.225Zm1.8-3.25-.2-1.05q-.225-.075-.412-.188-.188-.112-.338-.262l-1.05.35-.7-1.2.85-.75q-.05-.125-.05-.2v-.4q0-.075.05-.2l-.85-.75.7-1.2 1.05.35q.15-.15.338-.263.187-.112.412-.187l.2-1.05h1.4l.2 1.05q.225.075.413.187.187.113.337.263l1.05-.35.7 1.2-.85.75q.05.125.05.2v.4q0 .075-.05.2l.85.75-.7 1.2-1.05-.35q-.15.15-.337.262-.188.113-.413.188l-.2 1.05Zm.7-2.25q.525 0 .888-.363.362-.362.362-.887t-.362-.888q-.363-.362-.888-.362t-.887.362q-.363.363-.363.888t.363.887q.362.363.887.363ZM3.05 19h12-12Z" fill="#0069D1"/></svg>
+                    
+                    Works
+                </a>
+            </div>
+            <div id="education" class="qualification-content -active">
+                
+                <div class="qualification-item">
+                    <div></div>
+                    <div class="qualification-timeline">
+                        <span class="ball"></span>
+                        <span class="line"></span>
+                    </div>
+
+                    <div class="qualification-data">
+                        <h3 class="title">Systems Engineer</h3>
+                        <span class="local">Utepsa - University</span>
+                        <div class="calendar">
+                            <img src="./assets/img/calendar.svg"
+                            width="12" height="12"
+                            alt="Calendar icon" 
+                            class="icon">
+                            2019-2022
+                        </div>
+                    </div>
+                  
+                </div>
+
+                <div class="qualification-item">
+                    <div class="qualification-data">
+                        <h3 class="title">Android dev course</h3>
+                        <span class="local">Google</span>
+                        <div class="calendar">
+                            <img src="./assets/img/calendar.svg"
+                            width="12" height="12"
+                            alt="Calendar icon" 
+                            class="icon">
+                            2020-2020
+                        </div>
+                    </div>
+                    <div class="qualification-timeline">
+                        <span class="ball"></span>
+                        <span class="line"></span>
+                    </div>
+                    <div></div>
+                </div>
+                
+                <div class="qualification-item">
+                    <div></div>
+                    <div class="qualification-timeline">
+                        <span class="ball"></span>
+                        <span class="line"></span>
+                    </div>
+                    <div class="qualification-data">
+                        <h3 class="title">Web course</h3>
+                        <span class="local">Google</span>
+                        <div class="calendar">
+                            <img src="./assets/img/calendar.svg"
+                            width="12" height="12"
+                            alt="Calendar icon" 
+                            class="icon">
+                            2020-2020
+                        </div>
+                    </div>    
+                </div>
+
+                <div class="qualification-item">
+                    <div class="qualification-data">
+                        <h3 class="title">Desing Course</h3>
+                        <span class="local">Ed-Team</span>
+                        <div class="calendar">
+                            <img src="./assets/img/calendar.svg"
+                            width="12" height="12"
+                            alt="Calendar icon" 
+                            class="icon">
+                            2020-2020
+                        </div>
+                    </div>
+                    <div class="qualification-timeline">
+                        <span class="ball"></span>
+                        <span class="line"></span>
+                    </div>
+                    <div></div>
+
+                </div>
+            </div>
+            <div id="work" class="qualification-content">
+
+                <div class="qualification-item -active">
+                    <div class="qualification-data">
+                        <h3 class="title">assistant</h3>
+                        <span class="local">Utepsa - University</span>
+                        <div class="calendar">
+                            <img src="./assets/img/calendar.svg"
+                            width="12" height="12"
+                            alt="Calendar icon" 
+                            class="icon">
+                            2022-2022
+                        </div>
+                    </div>
+
+                    <div class="qualification-timeline">
+                        <span class="ball"></span>
+                        <span class="line"></span>
+                    </div>
+
+                    <div></div>
+                  
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section services">
+        <div class="section-title">
+            <h2 class="title">Services</h2>
+            <span class="subtitle">What I offer</span>
+        </div>
+
+        <div class="container"> 
+            <div class="services-wrap">
+                <div class="service-card">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="24" width="24" >
+                        <title>Android</title>
+                        <path d="M1 18q.225-2.675 1.638-4.925Q4.05 10.825 6.4 9.5L4.55 6.3q-.15-.225-.075-.475.075-.25.325-.375.2-.125.45-.05t.4.3L7.5 8.9Q9.65 8 12 8t4.5.9l1.85-3.2q.15-.225.4-.3.25-.075.45.05.25.125.325.375.075.25-.075.475L17.6 9.5q2.35 1.325 3.763 3.575Q22.775 15.325 23 18Zm6-2.75q.525 0 .888-.363.362-.362.362-.887t-.362-.887Q7.525 12.75 7 12.75t-.887.363q-.363.362-.363.887t.363.887q.362.363.887.363Zm10 0q.525 0 .888-.363.362-.362.362-.887t-.362-.887q-.363-.363-.888-.363t-.887.363q-.363.362-.363.887t.363.887q.362.363.887.363Z" fill="#0069D1"/></svg>
+
+                    <h3 class="card-title">
+                        Android <br> Dev
+                    </h3>
+
+                    <button class="card-button">
+                        View more
+
+                        <svg class="chevron" xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+                            <title>Right Arrow</title>
+                            <path d="m12 20-1.425-1.4 5.6-5.6H4v-2h12.175l-5.6-5.6L12 4l8 8Z"  fill="#0069D1"/></svg>
+                    </button>
+                    <div class="service-modal">
+                        <div class="modal-content">
+                            <h4 class="title">Android <br> Dev </h4>
+                            <button class="modal-close">
+                                <img src="./assets/img/close.svg" 
+                                alt="Close icon"
+                                width="16" height="16"
+                                >
+                            </button>
+                            <ul class="service-list">
+                                <li class="item">
+                                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+                                        <title>Check Icon</title>
+                                        <path d="m8.6 22.5-1.9-3.2-3.6-.8.35-3.7L1 12l2.45-2.8-.35-3.7 3.6-.8 1.9-3.2L12 2.95l3.4-1.45 1.9 3.2 3.6.8-.35 3.7L23 12l-2.45 2.8.35 3.7-3.6.8-1.9 3.2-3.4-1.45Zm.85-2.55 2.55-1.1 2.6 1.1 1.4-2.4 2.75-.65-.25-2.8 1.85-2.1-1.85-2.15.25-2.8-2.75-.6-1.45-2.4L12 5.15l-2.6-1.1L8 6.45l-2.75.6.25 2.8L3.65 12l1.85 2.1-.25 2.85 2.75.6ZM12 12Zm-1.05 3.55L16.6 9.9l-1.4-1.45-4.25 4.25-2.15-2.1L7.4 12Z" fill="#0069D1"/></svg>
+                                        I develop native android Aplications
+                                </li>
+                                <li class="item">
+                                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+                                        <title>Check Icon</title>
+                                        <path d="m8.6 22.5-1.9-3.2-3.6-.8.35-3.7L1 12l2.45-2.8-.35-3.7 3.6-.8 1.9-3.2L12 2.95l3.4-1.45 1.9 3.2 3.6.8-.35 3.7L23 12l-2.45 2.8.35 3.7-3.6.8-1.9 3.2-3.4-1.45Zm.85-2.55 2.55-1.1 2.6 1.1 1.4-2.4 2.75-.65-.25-2.8 1.85-2.1-1.85-2.15.25-2.8-2.75-.6-1.45-2.4L12 5.15l-2.6-1.1L8 6.45l-2.75.6.25 2.8L3.65 12l1.85 2.1-.25 2.85 2.75.6ZM12 12Zm-1.05 3.55L16.6 9.9l-1.4-1.45-4.25 4.25-2.15-2.1L7.4 12Z" fill="#0069D1"/></svg>
+                                        Ux design with diferent screens
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="service-card">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+                        <title>Web</title>
+                        <path d="M12 22q-2.075 0-3.9-.788-1.825-.787-3.175-2.137-1.35-1.35-2.137-3.175Q2 14.075 2 12t.788-3.9q.787-1.825 2.137-3.175 1.35-1.35 3.175-2.138Q9.925 2 12 2t3.9.787q1.825.788 3.175 2.138 1.35 1.35 2.137 3.175Q22 9.925 22 12t-.788 3.9q-.787 1.825-2.137 3.175-1.35 1.35-3.175 2.137Q14.075 22 12 22Zm-1-2.05V18q-.825 0-1.412-.587Q9 16.825 9 16v-1l-4.8-4.8q-.075.45-.138.9Q4 11.55 4 12q0 3.025 1.988 5.3Q7.975 19.575 11 19.95Zm6.9-2.55q.5-.55.9-1.188.4-.637.663-1.325.262-.687.4-1.412Q20 12.75 20 12q0-2.45-1.362-4.475Q17.275 5.5 15 4.6V5q0 .825-.587 1.412Q13.825 7 13 7h-2v2q0 .425-.287.712Q10.425 10 10 10H8v2h6q.425 0 .713.287.287.288.287.713v3h1q.65 0 1.175.387.525.388.725 1.013Z"  fill="#0069D1"/></svg>
+
+                    <h3 class="card-title">
+                        Web <br> Dev
+                    </h3>
+
+                    <button class="card-button">
+                        View more
+
+                        <svg class="chevron" xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+                            <title>Right Arrow</title>
+                            <path d="m12 20-1.425-1.4 5.6-5.6H4v-2h12.175l-5.6-5.6L12 4l8 8Z"  fill="#0069D1"/></svg>
+                    </button>
+                    <div class="service-modal">
+                        <div class="modal-content">
+                            <h4 class="title">Web <br> Dev </h4>
+                            <button class="modal-close">
+                                <img src="./assets/img/close.svg" 
+                                alt="Close icon"
+                                width="16" height="16"
+                                >
+                            </button>
+                            <ul class="service-list">
+                                <li class="item">
+                                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+                                        <title>Check Icon</title>
+                                        <path d="m8.6 22.5-1.9-3.2-3.6-.8.35-3.7L1 12l2.45-2.8-.35-3.7 3.6-.8 1.9-3.2L12 2.95l3.4-1.45 1.9 3.2 3.6.8-.35 3.7L23 12l-2.45 2.8.35 3.7-3.6.8-1.9 3.2-3.4-1.45Zm.85-2.55 2.55-1.1 2.6 1.1 1.4-2.4 2.75-.65-.25-2.8 1.85-2.1-1.85-2.15.25-2.8-2.75-.6-1.45-2.4L12 5.15l-2.6-1.1L8 6.45l-2.75.6.25 2.8L3.65 12l1.85 2.1-.25 2.85 2.75.6ZM12 12Zm-1.05 3.55L16.6 9.9l-1.4-1.45-4.25 4.25-2.15-2.1L7.4 12Z" fill="#0069D1"/></svg>
+                                        I develop responsive web applications
+                                </li>
+                                <li class="item">
+                                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+                                        <title>Check Icon</title>
+                                        <path d="m8.6 22.5-1.9-3.2-3.6-.8.35-3.7L1 12l2.45-2.8-.35-3.7 3.6-.8 1.9-3.2L12 2.95l3.4-1.45 1.9 3.2 3.6.8-.35 3.7L23 12l-2.45 2.8.35 3.7-3.6.8-1.9 3.2-3.4-1.45Zm.85-2.55 2.55-1.1 2.6 1.1 1.4-2.4 2.75-.65-.25-2.8 1.85-2.1-1.85-2.15.25-2.8-2.75-.6-1.45-2.4L12 5.15l-2.6-1.1L8 6.45l-2.75.6.25 2.8L3.65 12l1.85 2.1-.25 2.85 2.75.6ZM12 12Zm-1.05 3.55L16.6 9.9l-1.4-1.45-4.25 4.25-2.15-2.1L7.4 12Z" fill="#0069D1"/></svg>
+                                        I develop web Single page aplications
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="service-card">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+                        <title>Rest Api</title>
+                        <path d="M5 21q-.425 0-.713-.288Q4 20.425 4 20v-1H3v-4q0-.425.288-.713Q3.575 14 4 14h1V7q0-1.65 1.175-2.825Q7.35 3 9 3q1.65 0 2.825 1.175Q13 5.35 13 7v10q0 .825.588 1.413Q14.175 19 15 19t1.413-.587Q17 17.825 17 17v-7h-1q-.425 0-.712-.288Q15 9.425 15 9V5h1V4q0-.425.288-.713Q16.575 3 17 3h2q.425 0 .712.287Q20 3.575 20 4v1h1v4q0 .425-.288.712Q20.425 10 20 10h-1v7q0 1.65-1.175 2.825Q16.65 21 15 21q-1.65 0-2.825-1.175Q11 18.65 11 17V7q0-.825-.587-1.412Q9.825 5 9 5q-.825 0-1.412.588Q7 6.175 7 7v7h1q.425 0 .713.287Q9 14.575 9 15v4H8v1q0 .425-.287.712Q7.425 21 7 21Z" fill="#0069D1" /></svg>
+
+                    <h3 class="card-title">
+                        Rest <br> Apis
+                    </h3>
+
+                    <button class="card-button">
+                        View more
+
+                        <svg class="chevron" xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+                            <title>Right Arrow</title>
+                            <path d="m12 20-1.425-1.4 5.6-5.6H4v-2h12.175l-5.6-5.6L12 4l8 8Z"  fill="#0069D1"/></svg>
+                    </button>
+                    <div class="service-modal ">
+                        <div class="modal-content">
+                            <h4 class="title">Rest <br> Apis</h4>
+                            <button class="modal-close">
+                                <img src="./assets/img/close.svg" 
+                                alt="Close icon"
+                                width="16" height="16"
+                                >
+                            </button>
+                            <ul class="service-list">
+                                <li class="item">
+                                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+                                        <title>Check Icon</title>
+                                        <path d="m8.6 22.5-1.9-3.2-3.6-.8.35-3.7L1 12l2.45-2.8-.35-3.7 3.6-.8 1.9-3.2L12 2.95l3.4-1.45 1.9 3.2 3.6.8-.35 3.7L23 12l-2.45 2.8.35 3.7-3.6.8-1.9 3.2-3.4-1.45Zm.85-2.55 2.55-1.1 2.6 1.1 1.4-2.4 2.75-.65-.25-2.8 1.85-2.1-1.85-2.15.25-2.8-2.75-.6-1.45-2.4L12 5.15l-2.6-1.1L8 6.45l-2.75.6.25 2.8L3.65 12l1.85 2.1-.25 2.85 2.75.6ZM12 12Zm-1.05 3.55L16.6 9.9l-1.4-1.45-4.25 4.25-2.15-2.1L7.4 12Z" fill="#0069D1"/></svg>
+                                        I develop Rest Apis with json format
+                                </li>
+                                <li class="item">
+                                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+                                        <title>Check Icon</title>
+                                        <path d="m8.6 22.5-1.9-3.2-3.6-.8.35-3.7L1 12l2.45-2.8-.35-3.7 3.6-.8 1.9-3.2L12 2.95l3.4-1.45 1.9 3.2 3.6.8-.35 3.7L23 12l-2.45 2.8.35 3.7-3.6.8-1.9 3.2-3.4-1.45Zm.85-2.55 2.55-1.1 2.6 1.1 1.4-2.4 2.75-.65-.25-2.8 1.85-2.1-1.85-2.15.25-2.8-2.75-.6-1.45-2.4L12 5.15l-2.6-1.1L8 6.45l-2.75.6.25 2.8L3.65 12l1.85 2.1-.25 2.85 2.75.6ZM12 12Zm-1.05 3.55L16.6 9.9l-1.4-1.45-4.25 4.25-2.15-2.1L7.4 12Z" fill="#0069D1"/></svg>                                      
+                                        Experience in developing apis made with PHP
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+            
+
+        </div>
+
+
+    </section>
+
+    <section id="portfolio" class="section portfolio">
+        <div class="section-title">
+            <h2 class="title">Portfolio</h2>
+            <div class="subtitle">Most recent Works</div>
+        </div>
+
+        <div class="container">
+            <div class="glide portfolio-carousel">
+                <div class="glide__track" data-glide-el="track">
+                  <ul class="glide__slides">
+                    <li class="glide__slide">
+                        <picture>
+                            <source type="image/webp" srcset="./assets/img/app-prueba.webp" >
+                            <source type="image/jpg" srcset="./assets/img/app-prueba.jpg" >
+
+                            <img src="./assets/img/app-prueba.jpg" 
+                            alt="Modern App photo"
+                            width="640" height="426"
+                            >
+
+                        </picture>
+                        <div class="portfolio-content">
+                            <h3 class="title">Modern mobile design</h3>
+                            <p class="description">Android app adaptable to diferent displays, with ui native components using a Json API</p>
+                            <a href="#demo" class="calltoaction">
+                                Demo
+                                <svg  xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+                                    <title>Right Arrow</title>
+                                    <path d="m12 20-1.425-1.4 5.6-5.6H4v-2h12.175l-5.6-5.6L12 4l8 8Z"  fill="#0069D1"/></svg>
+                            </a>
+                        </div>
+
+                    </li>
+                    <li class="glide__slide">
+                        <picture>
+                            <source type="image/webp" srcset="./assets/img/app-prueba.webp" >
+                            <source type="image/jpg" srcset="./assets/img/app-prueba.jpg" >
+
+                            <img src="./assets/img/app-prueba.jpg" 
+                            alt="Modern App photo"
+                            width="640" height="426"
+                            >
+
+                        </picture>
+                        <div class="portfolio-content">
+                            <h3 class="title">Modern mobile design</h3>
+                            <p class="description">Android app adaptable to diferent displays, with ui native components using a Json API</p>
+                            <a href="#home" class="calltoaction">
+                                Demo
+                                <svg  xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+                                    <title>Right Arrow</title>
+                                    <path d="m12 20-1.425-1.4 5.6-5.6H4v-2h12.175l-5.6-5.6L12 4l8 8Z"  fill="#0069D1"/></svg>
+                            </a>
+                        </div>
+
+                    </li>
+                    <li class="glide__slide">
+                        <picture>
+                            <source type="image/webp" srcset="./assets/img/app-prueba.webp" >
+                            <source type="image/jpg" srcset="./assets/img/app-prueba.jpg" >
+
+                            <img src="./assets/img/app-prueba.jpg" 
+                            alt="Modern App photo"
+                            width="640" height="426"
+                            >
+
+                        </picture>
+                        <div class="portfolio-content">
+                            <h3 class="title">Modern mobile design</h3>
+                            <p class="description">Android app adaptable to diferent displays, with ui native components using a Json API</p>
+                            <a href="#home" class="calltoaction">
+                                Demo
+                                <svg  xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+                                    <title>Right Arrow</title>
+                                    <path d="m12 20-1.425-1.4 5.6-5.6H4v-2h12.175l-5.6-5.6L12 4l8 8Z"  fill="#0069D1"/></svg>
+                            </a>
+                        </div>
+
+                    </li>
+                  </ul>
+                </div>
+                <div class="glide__arrows" data-glide-el="controls">
+                    <svg class="glide__arrow glide__arrow--left" xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+                        <title>Left Arrow</title>
+                        <path d="m12 20-8-8 8-8 1.425 1.4-5.6 5.6H20v2H7.825l5.6 5.6Z" fill="#0069D1"/></svg>
+
+                    <svg class="glide__arrow glide__arrow--right" xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+                        <title>Right Arrow</title>
+                        <path d="m12 20-1.425-1.4 5.6-5.6H4v-2h12.175l-5.6-5.6L12 4l8 8Z"  fill="#0069D1"/></svg>
+                </div>
+                <div class="glide__bullets" data-glide-el="controls[nav]">
+                    <button class="glide__bullet" data-glide_dir="=0">
+                            Slide 1
+                    </button>
+                    <button class="glide__bullet" data-glide_dir="=1">
+                            Slide 2
+                    </button>
+                    <button class="glide__bullet" data-glide_dir="=2">
+                            Slide 3
+                    </button>
+                </div>
+              </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contactme">
+
+        <div class="section-title">
+            <h2 class="title">Contact Me</h2>
+            <span class="subtitle">Get in Touch</span>
+        </div>
+
+        <div class="container">
+            <div class="contactme-contacts">
+                <div class="contact">
+
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+                        <title>Call</title>
+                        <path d="M19.95 21q-3.225 0-6.287-1.438-3.063-1.437-5.425-3.8-2.363-2.362-3.8-5.425Q3 7.275 3 4.05q0-.45.3-.75t.75-.3H8.1q.35 0 .625.225t.325.575l.65 3.5q.05.35-.012.637-.063.288-.288.513L6.975 10.9q1.05 1.8 2.638 3.375Q11.2 15.85 13.1 17l2.35-2.35q.225-.225.588-.338.362-.112.712-.062l3.45.7q.35.075.575.337.225.263.225.613v4.05q0 .45-.3.75t-.75.3ZM6.025 9l1.65-1.65L7.25 5H5.025q.125 1.025.35 2.025.225 1 .65 1.975Zm8.95 8.95q.975.425 1.988.675 1.012.25 2.037.325v-2.2l-2.35-.475ZM6.025 9Zm8.95 8.95Z" fill="#000000" /></svg>
+
+
+                    <div class="data">
+                        <h3 class="title">Call Me</h3>
+                        <span class="subtitle">+591 78140498</span>
+                    </div>
+                </div>
+
+                <div class="contact">
+                    
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="M12 22q-2.05 0-3.875-.788-1.825-.787-3.187-2.15-1.363-1.362-2.15-3.187Q2 14.05 2 12q0-2.075.788-3.887.787-1.813 2.15-3.175Q6.3 3.575 8.125 2.787 9.95 2 12 2q2.075 0 3.887.787 1.813.788 3.175 2.151 1.363 1.362 2.15 3.175Q22 9.925 22 12v1.45q0 1.475-1.012 2.512Q19.975 17 18.5 17q-.9 0-1.675-.4t-1.275-1.05q-.675.675-1.587 1.063Q13.05 17 12 17q-2.075 0-3.537-1.463Q7 14.075 7 12t1.463-3.538Q9.925 7 12 7t3.538 1.462Q17 9.925 17 12v1.45q0 .725.45 1.137.45.413 1.05.413.6 0 1.05-.413.45-.412.45-1.137V12q0-3.275-2.363-5.638Q15.275 4 12 4 8.725 4 6.362 6.362 4 8.725 4 12t2.362 5.637Q8.725 20 12 20h5v2Zm0-7q1.25 0 2.125-.875T15 12q0-1.25-.875-2.125T12 9q-1.25 0-2.125.875T9 12q0 1.25.875 2.125T12 15Z" fill="#000000"/></svg>
+
+
+                    <div class="data">
+                        <h3 class="title">Email</h3>
+                        <span class="subtitle">walteribanez555@gmail.com</span>
+                    </div>
+                </div>
+
+                <div class="contact">
+
+                    <svg   class="icon" xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="M12 15q1.4 0 2.525-.688 1.125-.687 1.775-1.812-.875-.725-1.975-1.113Q13.225 11 12 11t-2.325.387q-1.1.388-1.975 1.113.65 1.125 1.775 1.812Q10.6 15 12 15Zm0-5q.825 0 1.413-.588Q14 8.825 14 8t-.587-1.412Q12.825 6 12 6q-.825 0-1.412.588Q10 7.175 10 8t.588 1.412Q11.175 10 12 10Zm0 9.35q3.05-2.8 4.525-5.088Q18 11.975 18 10.2q0-2.725-1.738-4.463Q14.525 4 12 4 9.475 4 7.737 5.737 6 7.475 6 10.2q0 1.775 1.475 4.062Q8.95 16.55 12 19.35ZM12 22q-4.025-3.425-6.012-6.363Q4 12.7 4 10.2q0-3.75 2.413-5.975Q8.825 2 12 2t5.587 2.225Q20 6.45 20 10.2q0 2.5-1.987 5.437Q16.025 18.575 12 22Zm0-11.8Z" fill="#000000"/></svg>
+
+
+
+                    <div class="data">
+                        <h3 class="title">Location</h3>
+                        <span class="subtitle">Bolivia - Santa Cruz</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contactme-form">
+                <div class="contactme-field -name">
+                    <label for="name" class="label">Name</label>
+                    <input type="name" type="text" class="input">
+                </div>
+                <div class="contactme-field -email">
+                    <label for="email" class="label">Email</label>
+                    <input type="email" type="email" class="input">
+                </div>
+                <div class="contactme-field -project">
+                    <label for="project" class="label">Project</label>
+                    <input type="project" type="text" class="input">
+                </div>
+                <div class="contactme-field -message">
+                    <label for="message" class="label">Message</label>
+                    <textarea  class="input" id="message" cols="0" rows="7"></textarea>
+                </div>
+
+                <button type="submit" id="btn-subtmit" class="calltoaction">
+                    Send Message
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+                        <title>Right Arrow</title>
+                        <path d="m12 20-1.425-1.4 5.6-5.6H4v-2h12.175l-5.6-5.6L12 4l8 8Z"  fill="#0069D1"/></svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="section footer">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="title">Walter</h2>
+                <span class="subtitle">Mobile and web Developer</span>
+            </div>
+            <div class="footer-sitemap">
+                <ul class="list">
+                    <li class="item">
+                        <a href="#services" class="link">Services</a>
+                    </li>
+                    <li class="item">
+                        <a href="#portfolio" class="link">Portfolio</a>
+                    </li>
+                    <li class="item">
+                        <a href="#contact" class="link">Contact me</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <ul class="social">
+                    <li class="item">
+                        <a href="https://www.facebook.com/walter.ibanez.56614/" class="link"
+                        rel="noopener"
+                        target="_blank"
+                        >
+                        <svg class="icon" height="24" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="24" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <title>facebook icon</title>
+                            <path d="M512,257.555c0,-141.385 -114.615,-256 -256,-256c-141.385,0 -256,114.615 -256,256c0,127.777 93.616,233.685 216,252.89l0,-178.89l-65,0l0,-74l65,0l0,-56.4c0,-64.16 38.219,-99.6 96.695,-99.6c28.009,0 57.305,5 57.305,5l0,63l-32.281,0c-31.801,0 -41.719,19.733 -41.719,39.978l0,48.022l71,0l-11.35,74l-59.65,0l0,178.89c122.385,-19.205 216,-125.113 216,-252.89Z" style="fill-rule:nonzero;" fill="#F0EEFC"/></svg>
+
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="https://www.instagram.com/walter_ibanezs" class="link">
+                            <svg class="icon" fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="24px" height="24px">
+                                <title>instagram icon</title>
+                                <path d="M 13.5 6 C 9.3754991 6 6 9.3754991 6 13.5 L 6 34.5 C 6 38.624501 9.3754991 42 13.5 42 L 34.5 42 C 38.624501 42 42 38.624501 42 34.5 L 42 13.5 C 42 9.3754991 38.624501 6 34.5 6 L 13.5 6 z M 13.5 9 L 34.5 9 C 37.003499 9 39 10.996501 39 13.5 L 39 18 L 30.599609 18 C 28.950631 16.186543 26.631199 15 24 15 C 21.368801 15 19.049369 16.186543 17.400391 18 L 9 18 L 9 13.5 C 9 10.996501 10.996501 9 13.5 9 z M 31.5 12 A 1.50015 1.50015 0 1 0 31.5 15 L 34.5 15 A 1.50015 1.50015 0 1 0 34.5 12 L 31.5 12 z M 24 18 C 27.331479 18 30 20.668523 30 24 C 30 27.331477 27.331479 30 24 30 C 20.668521 30 18 27.331477 18 24 C 18 20.668523 20.668521 18 24 18 z M 9 21 L 15.607422 21 C 15.265966 21.948081 15 22.937567 15 24 C 15 28.952794 19.047202 33 24 33 C 28.952798 33 33 28.952794 33 24 C 33 22.937567 32.734034 21.948081 32.392578 21 L 39 21 L 39 34.5 C 39 37.003499 37.003499 39 34.5 39 L 13.5 39 C 10.996501 39 9 37.003499 9 34.5 L 9 21 z" fill="#F0EEFC"/></svg>
+                        </a>
+                    </li>
+                    
+                </ul>
+
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="btn-totop">
+        <img width="13" height="12" src="./assets/img/arrowup.svg" alt="to top icon">
+    </a>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/glide.min.js" integrity="sha512-IkLiryZhI6G4pnA3bBZzYCT9Ewk87U4DGEOz+TnRD3MrKqaUitt+ssHgn2X/sxoM7FxCP/ROUp6wcxjH/GcI5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="text/javascript"  src="js/script.js"></script>
+</body>
+</html>
